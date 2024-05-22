@@ -1,0 +1,88 @@
+<!-- Seyed Ahmad Farsad -->
+<!-- Yang Su  -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+    <head>
+        <title>Contactez-nous</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>LA VILLE DU SKI</h1>
+            </header>
+            <nav class="navi">
+                <a href="a_propos.html" class="lien">À PROPOS</a>
+                <a href="design.html" class="lien">NOS DESIGNS</a>
+                <a href="produits.html" class="lien">NOS PRODUITS</a>
+                <a href="commande.html" class="lien">FAIRE UNE COMMANDE</a>
+                <a href="contactez.html" class="active">CONTACTEZ-NOUS</a>
+                <a href="javascript:void(0);" class="icon" onclick="clique()">
+                    <img src="icon.png" alt="icon" height="25" width="25"></a>
+            </nav>
+            <main>
+                <p><br>
+                Merci d'avoir pris le temps de visiter le site de notre petite
+                boutique du ski. Avez-vous des questions ou des commentaires
+                au sujet des informations ou des produits trouvés sur notre
+                site?<br><br>
+                N'hésitez pas à nous contacter et nous nous ferons un plaisir
+                de vous aider de toutes les manières possibles:
+                </p><br>
+                <h4>TÉLÉPHONEZ-NOUS</h4>
+                <p>au 123-456-7890<br>
+                ou sans fraiss au<br>
+                098-765-4321</p><br>
+                <h4>ENVOYEZ-NOUS UN COURRIEL</h4>
+                <p>à <a href="mailto:info@boutiqueduski.com">
+                info@boutiqueduski.com</a></p><br>
+                <h4>VISITEZ NOTRE BOUTIQUE</h4>
+                <p>au 2900 Edouard Montpetit Blvd<br>
+                à Montreal, Quebec H3T 1J4<br>
+                (ouvert du lundi au samedi, de 10h00 à 18h00)</p><br>
+                <h4>LOCALISATION</h4>
+                <a href="carte.jpg">
+                    <figure>
+                        <img class="galerie" src="carte.png"
+                             alt="la carte de notre boutique">
+                        <figcaption>
+                            La carte de notre boutique
+                        </figcaption>
+                    </figure>
+                </a><br>
+                <h4>OU REMPLISSEZ LE FORMULAIRE CI-DESSOUS</h4>
+                <form name="forme" method="post" action="">
+                    <fieldset> 
+                        <label for="nom">*Nom:</label><br>
+                        <input type="text" name="nom" id="nom" required="required" placeholder="Votre nom">
+                        <label for="corriel">*Courriel:</label><br>
+                        <input type="email" name="corriel" id="corriel" required="required" placeholder="Votre courriel">
+                        
+                    <label for="commentaire">Commentaires:</label><br>
+                    <textarea name="commentaire" id="commentaire" rows="10" cols="30" maxlength="70"></textarea>
+                    <input id="envoyer" type="submit" value="Envoyer">
+                    </fieldset>
+                </form>
+                <br><br>
+            </main>
+            <footer>
+                <p>Conception et développement Web par Seyed Ahmad Farsad &amp;
+                Yang Su</p>
+            </footer>
+        </div>
+        <script>
+            function clique() {
+                var x = document.getElementsByClassName("navi")[0];
+                for(var i=0;i<4;i++){
+                    if (x.getElementsByClassName("lien")[i].style.display === "block") {
+                        
+                        /*x.getElementsByClassName("lien")[i].style.display = "none";*/
+                        } else {
+                        x.getElementsByClassName("lien")[i].style.display = "block";
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>

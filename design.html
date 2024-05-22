@@ -1,0 +1,83 @@
+<!-- Seyed Ahmad Farsad -->
+<!-- Yang Su  -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+    <head>
+        <title>À propos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>LA VILLE DU SKI</h1>
+            </header>
+            <nav class="navi">
+                <a href="a_propos.html" class="lien">À PROPOS</a>
+                <a href="design.html" class="active">NOS DESIGNS</a>
+                <a href="produits.html" class="lien">NOS PRODUITS</a>
+                <a href="commande.html" class="lien">FAIRE UNE COMMANDE</a>
+                <a href="contactez.html" class="lien">CONTACTEZ-NOUS</a>
+                <a href="javascript:void(0);" class="icon" onclick="clique()">
+                    <img src="icon.png" alt="icon" height="25" width="25"></a>
+            </nav>
+            <main>
+                <h3><br>Nos choix du thème</h3>
+                <ul>
+                    <li>Couleurs: nous utilisons principalement
+                    la combinaison de couleurs monochrome pour rendre le site
+                    plus harmonique visuellement.</li><br>
+                    <li>Propriétés de polices: nous utilisons principalement Arial
+                    comme une police commune, sauf le nom de notre site dans l'entête est
+                    italique. </li><br>
+                    <li>Les écritures: on utilisons des en-têtes, des sous-en
+                    -têtes, des paragraphes courts et des listes pour rendre
+                    le site plus facile à lire.</li><br>
+                </ul>
+                
+                <h3>Nos choix du design</h3>
+                <ul>
+                    <li>Disposition des éléments:
+                    <ul>
+                        <br><li>Pour la largeur du navigateur
+                            plus de 769 pixels, nous mettons l'entête en haut. Au-dessous
+                            de l'entête, il y a deux colonnes: la colonne à gauche est
+                            le menu et la colonne à droite est le contenu principle. Le
+                            footer est placé en bas de chaque page.</li><br>
+                        <li>Pour la largeur du navigateur entre 501 et 768 pixels, nous
+                        élimitons l'image dans l'entête et il y a 1 colonne dans toute
+                        page. Le défilement du menu est vertical et la largeur chaque
+                        étiquette du menu est toute la largeur du navigateur.</li><br>
+                        <li>Pour la largeur du navigateur au plus de 500 pixels, en plus de
+                        la configuration pour la largeur entre 501 et 768 pixels, nous
+                        mettons une icône qui va afficher les étiquettes vers les autres
+                        pages lors d'un clic sur l'icône. </li><br>
+                    </ul>
+                    </li>
+                    <li>Organisation du contenu entre les différentes pages:
+                    nous utilisons la structure hiérarchique. Il y a une page
+                    d'accueil avec 5 liens de navigation vers les sections
+                    principales du site.</li><br>
+                </ul>
+                
+            </main>
+            <footer>
+                <p>Conception et développement Web par Seyed Ahmad Farsad &amp;
+                Yang Su</p>
+            </footer>
+        </div>
+        <script>
+            function clique() {
+                var x = document.getElementsByClassName("navi")[0];
+                for(var i=0;i<4;i++){
+                    if (x.getElementsByClassName("lien")[i].style.display === "block") {
+                        
+                        /*x.getElementsByClassName("lien")[i].style.display = "none";*/
+                        } else {
+                        x.getElementsByClassName("lien")[i].style.display = "block";
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>

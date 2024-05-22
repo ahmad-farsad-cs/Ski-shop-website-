@@ -1,0 +1,152 @@
+<!-- Seyed Ahmad Farsad -->
+<!-- Yang Su  -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+    <head>
+        <title>À propos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>LA VILLE DU SKI</h1>
+            </header>
+            <nav class="navi">
+                <a href="a_propos.html" class="active">À PROPOS</a>
+                <a href="design.html" class="lien">NOS DESIGNS</a>
+                <a href="produits.html" class="lien">NOS PRODUITS</a>
+                <a href="commande.html" class="lien">FAIRE UNE COMMANDE</a>
+                <a href="contactez.html" class="lien">CONTACTEZ-NOUS</a>
+                <a href="javascript:void(0);" class="icon" onclick="clique()">
+                    <img src="icon.png" alt="icon" height="25" width="25"></a>
+            </nav>
+            <main>
+                <h2>À propos du site:</h2>
+                <h3>Le public ciblé</h3>
+                <ul>
+                    <li>Les adultes qui aiment faire du ski et qui habitent au Canada.</li>
+                </ul>
+                <h3>Les attentes principles du client</h3>
+                <ol>
+                    <li>placer une commande d'équipements pour faire du ski</li>
+                    <li>faire une requête de louer
+                d'équipement pour faire du ski</li>
+                    <li>trouver des informations pertinentes
+                de la boutique (l'adresse, l'adresse courriel, numéro de téléphone etc)</li>
+                </ol>
+                <h3>Les compétiteurs</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.skis.com">Skis.com</a>
+                        <ul>
+                            <li>Forces:
+                            <ol>
+                                <li>
+                                    Bon contraste entre les mots et le fond.
+                                </li><br>
+                                <li>
+                                    Une seule colonne pour l'affichage sur le mobile
+                                </li><br>
+                            </ol>
+                            </li>
+                            <li>Faiblesses:
+                            <ol>
+                                <li>
+                                    La page est trop chargé avec plein de images. Elle est donc
+                                    lourde à charger.
+                                </li><br>
+                                <li>
+                                    Pour l'affichage sur le mobile, il y a trop d'éléments visuels.
+                                </li>
+                            </ol>
+                            </li>
+                        </ul>
+                    </li><br>
+                    <li>
+                        <a href="https://www.snowinn.com/ski-store">Snowinn.com</a>
+                        <ul>
+                            <li>Forces:
+                            <ol>
+                                <li>
+                                    La taille des images est flexible avec le changement de la largeur
+                                    du navigateur.
+                                </li><br>
+                                <li>
+                                    La police du site est d'un type commune,
+                                    le texte est donc facile à lire.
+                                </li><br>
+                            </ol>
+                            </li>
+                            <li>Faiblesses:
+                            <ol>
+                                <li>
+                                    Il y a trop de étiquettes de menu en haut
+                                    de la page d'accueil lorsque la largeur est grande.
+                                </li><br>
+                                <li>
+                                    Quand la largeur de la fenêtre du navigateur est moyenne,
+                                    les animations ne fonctionnent pas correctement. Des textes
+                                    dans les images de l'animation est couvertes par les autres textes.
+                                </li><br>
+                            </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.backcountry.com/">Backcountry.com</a>
+                        <ul>
+                            <li>Forces:
+                            <ol>
+                                <li>
+                                    Bon contrastee de couleurs. La combinaison
+                                    des couleurs est harmonique visuellement. 
+                                </li><br>
+                                <li>
+                                    La mise en page est simple: il y a une
+                                    seule colonne dans la page d'accueil avec
+                                    n'importe quelle largeur de la fenêtre du
+                                    navigateur.
+                                </li><br>
+                            </ol>
+                            </li>
+                            <li>Faiblesses:
+                            <ol>
+                                <li>
+                                    Lorsque la largeur de la fenêtre du
+                                    navigateur est grande, il y a des images
+                                    dans chaque sous-menu, ça peut-être rendre
+                                    le site un peu plus lourd à charger.
+                                </li><br>
+                                <li>
+                                    Il n'y a pas de margins lorsque la largeur de
+                                    la fenêtre du navigateur est grande, ça peut
+                                    rendre le site trop lourd.
+                                </li><br>
+                            </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </main>
+            <footer>
+                <p>Conception et développement Web par Seyed Ahmad Farsad &amp;
+                Yang Su</p>
+            </footer>
+        </div>
+        <script>
+            function clique() {
+                var x = document.getElementsByClassName("navi")[0];
+                for(var i=0;i<4;i++){
+                    if (x.getElementsByClassName("lien")[i].style.display === "block") {
+                        
+                        /*x.getElementsByClassName("lien")[i].style.display = "none";*/
+                        } else {
+                        x.getElementsByClassName("lien")[i].style.display = "block";
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!-- Seyed Ahmad Farsad -->
+<!-- Yang Su  -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+    <head>
+        <title>Faire une commande</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>LA VILLE DU SKI</h1>
+            </header>
+            <nav class="navi">
+                <a href="a_propos.html" class="lien">À PROPOS</a>
+                <a href="design.html" class="lien">NOS DESIGNS</a>
+                <a href="produits.html" class="lien">NOS PRODUITS</a>
+                <a href="commande.html" class="active">FAIRE UNE COMMANDE</a>
+                <a href="contactez.html" class="lien">CONTACTEZ-NOUS</a>
+                <a href="javascript:void(0);" class="icon" onclick="clique()">
+                    <img src="icon.png" alt="icon" height="25" width="25"></a>
+            </nav>
+            <main>
+                <h3>Nous vendons et louons une vaste sélection d'équipements
+                pour faire du ski ou du snowboard!</h3>
+                <p>
+                    La Ville de Ski, c’est une boutique d’équipements de ski.
+                    Vous y retrouverez une vaste sélection d’équipements pour
+                    faire du ski pour enfants, ados et adultes. <br><br>
+                    La location d'un équipement complet comprend l'une de ces
+                    deux options:<br><br>
+                    Ski: skis, chaussures, bâtons, casques<br>
+                    Snowboard: snowboards, bottes, casques<br><br>
+                    Une pièce d'identité est requise pour la location
+                    d'équipement (permis de conduire ou carte santé ou carte
+                    de crédit).<br><br>
+                    La signature d'un parent ou d'un tuteur est requise pour la
+                    location d'équipement à toute personne de moins de 18 ans.
+                    <br><br>
+                    TAXES NON INCLUSES<br><br>
+                </p>
+                <table>  
+                    <caption>Location d'équipements</caption>
+                    <tr>
+                        <th>Produits</th>
+                        <th>Journée</th>
+                        <th>Semaine</th>
+                        <th>Mois</th>
+                    </tr>
+                    <tr>
+                        <td>Casques</td>
+                        <td>11$</td>
+                        <td>50$</td>
+                        <td>200$</td>
+                    </tr>
+                    <tr>
+                        <td>Skis</td>
+                        <td>30$</td>
+                        <td>120$</td>
+                        <td>450$</td>
+                    </tr>
+                    <tr>
+                        <td>Bâtons</td>
+                        <td>11$</td>
+                        <td>50$</td>
+                        <td>200$</td>
+                    </tr>
+                    <tr>
+                        <td>Bottes</td>
+                        <td>23$</td>
+                        <td>100$</td>
+                        <td>400$</td>
+                    </tr>
+                </table>
+                <br><br>
+                <h4>Remplissez le formulaire ci-dessous pour faire une commande
+                </h4>
+                <form name="forme" method="post" action="">
+                    <fieldset> 
+                        <label for="nom">*Nom:</label><br>
+                        <input type="text" name="nom" id="nom" required="required" placeholder="Votre nom">
+                        <label for="corriel">*Courriel:</label><br>
+                        <input type="email" name="corriel" id="corriel" required="required" placeholder="Votre courriel">
+                        <label class="duree" for="duree">La durée de la location: </label><br>
+                        <input class="duree" type="radio" name="duree" value="journee" checked> Journée<br>
+                        <input class="duree" type="radio" name="duree" value="semaine"> Semaine<br>
+                        <input class="duree" type="radio" name="duree" value="mois"> Mois<br>  
+                        <label class="produits" for="produits">Les produits à commander: </label><br>
+                        <input class="produits" type="checkbox" name="casques" value="casques" checked="checked">Casques<br>
+                        <input class="produits" type="checkbox" name="skis" value="skis">Skis<br>
+                        <input class="produits" type="checkbox" name="batons" value="batons">Bâtons<br>
+                        <input class="produits" type="checkbox" name="bottes" value="bottes">Bottes<br>
+                        
+                        <label for="commentaires">Commentaires:</label><br>
+                        <textarea name="commentaires" id="commentaires" rows="10" cols="30" maxlength="70"></textarea>
+                        <input id="envoyer" type="submit" value="Envoyer">
+                    </fieldset>
+                </form>
+            </main>
+            <footer>
+                <p>Conception et développement Web par Seyed Ahmad Farsad &amp;
+                Yang Su</p>
+            </footer>
+        </div>
+        <script>
+            function clique() {
+                var x = document.getElementsByClassName("navi")[0];
+                for(var i=0;i<4;i++){
+                    if (x.getElementsByClassName("lien")[i].style.display === "block") {
+                        
+                        /*x.getElementsByClassName("lien")[i].style.display = "none";*/
+                        } else {
+                        x.getElementsByClassName("lien")[i].style.display = "block";
+                        }
+                    }
+                }
+        </script>
+    </body>
+</html>
